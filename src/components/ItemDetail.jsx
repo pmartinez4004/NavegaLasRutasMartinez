@@ -1,3 +1,5 @@
+import Counter from "./Counter";
+
 export default function ItemDetail({ product }) {
     return (
         <>
@@ -7,6 +9,7 @@ export default function ItemDetail({ product }) {
             <p>Descripcion: {product?.description}</p>
             <p>Categoria: {product?.category}</p>
             <p>Precio ${product?.price}</p>
+            <Counter />
         </>
     );
 }
